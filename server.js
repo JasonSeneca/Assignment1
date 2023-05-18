@@ -1,4 +1,4 @@
-var HTTP_PORT = process.env.PORT || 8080;
+var HTTP_PORT = process.env.PORT || 3000;
 var express = require("express");
 var app = express();
 
