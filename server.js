@@ -1,11 +1,11 @@
-var HTTP_PORT = process.env.PORT || 3000;
-var express = require("express");
-var app = express();
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
-// setup a 'route' to listen on the default url path
-app.get("/", (req, res) => {
-    res.send("Jason Kvitaishvili ");
+app.get('/', (req, res) => {
+  res.send('Rohit Gaur - 01234567');
 });
 
-// setup http server to listen on HTTP_PORT
-app.listen(HTTP_PORT);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
